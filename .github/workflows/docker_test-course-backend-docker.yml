@@ -48,4 +48,4 @@ jobs:
         app-name: 'test-course-backend-docker'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_f73dbdf3565c4332a9d1f69c468969c6 }}
-        images: 'index.docker.io/${{ secrets.AzureAppService_ContainerUsername_a77c34f9d63040f5a2b862f2b4e678e2 }}/test-course:${{ github.sha }}'
+        images: 'index.docker.io/albada/test-course:${{ github.sha }}'
